@@ -20,6 +20,12 @@ Captured initial [SYN] requests sent to target ports. Open ports responded with 
 #### Unencrypted Communications:
 Observed plain-text service communications on port 21 (FTP) and port 80 (HTTP) without TLS encryption.
 ## 🖼️ Screenshots
+#### Nmap Scanning
+<img width="1718" height="888" alt="nmap scanning" src="https://github.com/user-attachments/assets/01ba447c-618c-4209-8850-77da71116a46" />
+
+#### Wireshark
+
+<img width="1718" height="888" alt="wireshark" src="https://github.com/user-attachments/assets/27b4e32d-b047-44e7-90cb-36cd2ab7a601" />
 
 ## 💡 Key TakeawaysEnumeration is Critical:
 Port scanning provides immediate insight into an enterprise's attack surface.Packet Visibility: Wireshark filtering (ip.addr == <target-ip>) highlights how stealth scans interact with remote firewalls and sockets.Remediation: Outdated services like vsftpd 2.3.4 and legacy Samba versions must be updated or disabled to prevent remote code execution.
