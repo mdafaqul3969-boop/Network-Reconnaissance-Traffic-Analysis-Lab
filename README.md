@@ -4,8 +4,15 @@ A beginner cybersecurity lab demonstrating network reconnaissance and traffic an
 This project demonstrates basic network reconnaissance and traffic analysis in an isolated virtual lab environment. Using Nmap, active services and open ports were enumerated on a target host (Metasploitable 2). Concurrently, Wireshark was used to capture and analyze the underlying network traffic (TCP handshakes, ICMP probes, and protocol headers) to understand how port scanning and service detection operate at the packet level.
 ## 🎯 Objectives
 Set up a safe, isolated host-only virtual laboratory using VMware Workstation.Identify active hosts, open ports, service versions, and target OS details using Nmap.Inspect network packets during enumeration using Wireshark to analyze scanning techniques (e.g., SYN scans).Document potential vulnerabilities associated with outdated services running on the target.
-## ⚙️️ Environment & SetupAttacker Machine:
-Kali Linux (192.168.x.x)Target Machine: Metasploitable 2 (192.168.x.x)Network Mode: Host-Only (Isolated from external networks)Tools Used: Nmap, Wireshark, VMware Workstation
+## ⚙️️ Environment & Setup
+#### Attacker Machine:
+Kali Linux (192.168.x.x)
+#### Target Machine:
+Metasploitable 2 (192.168.x.x)
+#### Network Mode:
+Host-Only (Isolated from external networks)
+#### Tools Used:
+Nmap, Wireshark, VMware Workstation
 ## 🔍 Key Findings1.
 Discovered Services & Open Ports
 | Port | Protocol | Service | Version | Risk Level |
