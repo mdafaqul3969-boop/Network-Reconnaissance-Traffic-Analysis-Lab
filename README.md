@@ -15,8 +15,11 @@ Discovered Services & Open Ports
 | 80 | TCP | HTTP | Apache httpd 2.2.8 | Medium |
 | 139 / 445 | TCP | NetBIOS / SMB | Samba 3.0.20 | High |
 ## 📊 Traffic Analysis (Wireshark)
-TCP SYN Stealth Scan (-sS): Captured initial [SYN] requests sent to target ports. Open ports responded with [SYN, ACK] followed by an immediate [RST] from Nmap to teardown the half-open connection.Unencrypted Communications: Observed plain-text service communications on port 21 (FTP) and port 80 (HTTP) without TLS encryption.
+#### TCP SYN Stealth Scan (-sS):
+Captured initial [SYN] requests sent to target ports. Open ports responded with [SYN, ACK] followed by an immediate [RST] from Nmap to teardown the half-open connection.
+#### Unencrypted Communications:
+Observed plain-text service communications on port 21 (FTP) and port 80 (HTTP) without TLS encryption.
 ## 🖼️ Screenshots
-(Include images of your Nmap scan results and Wireshark capture window here)
+
 ## 💡 Key TakeawaysEnumeration is Critical:
 Port scanning provides immediate insight into an enterprise's attack surface.Packet Visibility: Wireshark filtering (ip.addr == <target-ip>) highlights how stealth scans interact with remote firewalls and sockets.Remediation: Outdated services like vsftpd 2.3.4 and legacy Samba versions must be updated or disabled to prevent remote code execution.
